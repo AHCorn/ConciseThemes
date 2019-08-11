@@ -1,5 +1,4 @@
 <?php
-
 if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 <h1 style="margin-bottom: 0px;margin-top: 0px;"><a href="<?php $this->options->siteUrl(); ?>" class=" logo" ><?php $this->options->title() ?></a></h1>
  <?php
