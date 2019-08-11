@@ -4,7 +4,7 @@
  * 
  * @package 简和
  * @author 安和
- * @version 1.0.0
+ * @version 1.0.3
  * @link http://lolicorn.com
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
