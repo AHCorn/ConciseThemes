@@ -8,23 +8,18 @@
  * @link http://lolicorn.com
  */
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
-$this->need('header.php');
-
-?>
+$this->need('header.php');?>
 <html>
 <body>
 <div class="main">
 <div class="article-list">
 <div class="content">
-      <?php  $this->need('side.php'); ?>
+<?php  $this->need('side.php'); ?>
 <?php while($this->next()): ?>
-  <time datetime="<?php $this->date('c'); ?>" itemprop="datePublished"><?php $this->date('M j, Y'); ?></time>
+<time datetime="<?php $this->date('c'); ?>"><?php $this->date('M j, Y'); ?></time>
 <h2><a href="<?php $this->permalink() ?>"><?php $this->title() ?></a></h2>
 <hr>
 <?php endwhile; ?>
-
 <center>
-
-    <?php $this->pageNav('&laquo;', '&raquo;', 5, '...', array('wrapTag' => 'ul', 'wrapClass' => 'page-change', 'itemTag' => 'li', 'textTag' => 'span', 'currentClass' => 'active', 'prevClass' => 'prev', 'nextClass' => 'next')); ?>
- </center>
-<!-- end #main-->
+<?php $this->pageNav('&laquo;', '&raquo;', 5, '...', array('wrapTag' => 'ul', 'wrapClass' => 'page-change', 'itemTag' => 'li', 'textTag' => 'span', 'currentClass' => 'active', 'prevClass' => 'prev', 'nextClass' => 'next')); ?>
+</center>
