@@ -10,4 +10,4 @@ $this->need('header.php');?>
 <h2 style="margin-bottom: 0px;"><?php $this->title() ?></h2>
 <p style="padding-top:10px;margin-top: 0px;"><?php _e('标签: '); ?><?php $this->tags(', ', true, '无标签'); ?></p>
 <?php $this->content(); ?>
-<?php endwhile; ?>
+
